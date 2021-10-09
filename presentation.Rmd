@@ -1,0 +1,32 @@
+---
+title: "Presentation"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/visualisation.R", echo = TRUE)
+```
+
+## Overview
+
+The assignment required that we select two seperate data sets and wrangle them into one tibble. I selected mortality rate in children and babies per woman because comparison between them could be somewhat significant.
+
+# Results for 2020
+
+The figure below shows the relationship between births per woman and mortality rate in 2020 for different countries. The data points represent each country 
+
+```{r}
+fig_2020
+```
+
+
+# Results for 2021
+
+```{r}
+fig_2021
+```
+
+# General observations
+
+We can see that on average, mortality rate increases with the number of births per woman. This could be due to the fact that more children per woman increases risk to the mother as well as the child. This could lead to more deaths in newborns as well as lead to health risks in children that could lead to early deaths.
