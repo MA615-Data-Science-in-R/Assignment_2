@@ -1,6 +1,6 @@
 library(ggplot2)
 
-source(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/wrangled_code.R", echo = TRUE)
+source(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/wrangling_code.R", echo = TRUE)
 
 # Use ggplot to display the results
 # geom_point assigns each country as points and within it we assign the size of each point

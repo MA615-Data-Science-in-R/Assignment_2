@@ -33,5 +33,5 @@ mortality_rel <- select(mortality, "country" = country, "mort_rt" = X2021)
 data_2021 <- inner_join(babies_rel, mortality_rel)
 
 # Convert the data into a tibble
-data_2021 <- tbl_df(data_2021)
+data_2021 <- as_tibble(data_2021)
 
