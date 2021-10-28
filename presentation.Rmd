@@ -5,7 +5,8 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-source(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/visualisation.R", echo = TRUE)
+source("visualisation.R")
+source("wrangling_code.R")
 ```
 
 ## Overview
@@ -16,15 +17,17 @@ The assignment required that we select two seperate data sets and wrangle them i
 
 The figure below shows the relationship between births per woman and mortality rate in 2020 for different countries. The data points represent each country 
 
-```{r}
-fig_2020
+```{r,echo = FALSE,warning=FALSE,message=FALSE,results = FALSE}
+vis_fun_2020(data_2020)
+#fig_2020
 ```
 
 
 # Results for 2021
 
-```{r}
-fig_2021
+```{r,echo = FALSE,warning=FALSE,message=FALSE,results = FALSE}
+vis_fun_2021(data_2021)
+#fig_2021
 ```
 
 # General observations
