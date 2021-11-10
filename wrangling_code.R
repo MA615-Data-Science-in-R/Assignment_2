@@ -3,12 +3,18 @@
 library(tidyverse)
 library(dplyr)
 library(magrittr)
-
+###################################################################################################################
+# Notice: I change the code to read csv. It is impossible for other people to read your csv file with your computer
+# location. I change the specific loctaion to the location inside of this project. It can help other people to read
+# the file. 
+###################################################################################################################
 ## Steps to tidy up the data
 
 # Import the data you need
-babies <- read.csv(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/children_per_woman_total_fertility.csv")
-mortality <- read.csv(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/child_mortality_0_5_year_olds_dying_per_1000_born.csv")
+babies <- read.csv("children_per_woman_total_fertility.csv")
+mortality <- read.csv("child_mortality_0_5_year_olds_dying_per_1000_born.csv")
+#babies <- read.csv(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/children_per_woman_total_fertility.csv")
+#mortality <- read.csv(file = "/Users/zarawaheed/Documents/BostonUniversity/MA615/Homework/Assignment_2/child_mortality_0_5_year_olds_dying_per_1000_born.csv")
 
 # Select the relevant columns that you will be running your analysis on
 babies_rel <- select(babies, "country" = country, "births" = X2020)
